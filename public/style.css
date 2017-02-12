@@ -1,0 +1,25 @@
+.photoContainer img.photo {
+    width: 350px;
+    height: 350px;
+    padding: 5px;
+    border: 3px solid dimgray;
+    background-color: greenyellow;
+    margin: 5px;
+}
+.photoContainer img.photo:hover {
+    background-color: aqua;
+}
+.photoContainer {
+    text-align: center;
+    padding-top: 30px;
+}    
+form.serchForm {
+    text-align: center;
+}    
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-family: fantasy;
+}
+
+
