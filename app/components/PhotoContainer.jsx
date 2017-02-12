@@ -1,5 +1,5 @@
-// This is the photoContainer component, getting a photos object and generate a 15 'img' object
-// with the photos from the Flickr server
+// This is the photoContainer component
+// Getting the photos object and generate 30 'img' object with photos from the Flickr server
 
 var React = require('react');
 

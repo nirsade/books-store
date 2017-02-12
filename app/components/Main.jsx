@@ -23,6 +23,7 @@ var Main = React.createClass({
         // call the getPhotos method with the user search input
         FlickrApi.getPhotos(search).then(function (photos) {
             // In case of success response from the server
+            // update the relevant properties
             that.setState({
                 search: search,
                 photos: photos,
@@ -30,6 +31,7 @@ var Main = React.createClass({
             });
         }, function (errorMessage) {
             // In case of error in the http request
+            // set isLoadding to false to stop preview the loading message
             that.setState({
                 isLoading: false
             });

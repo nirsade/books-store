@@ -8,7 +8,7 @@ var SearchForm = React.createClass({
         
         var search = this.refs.search.value;
         
-        // If the user set a search input that is not empty then it set the search prop 
+        // If the user set a search input that is not empty then it set the search property
         // And invoke the 'onSearch' function
         if(search.length > 0) {
             this.refs.search.value = '';
