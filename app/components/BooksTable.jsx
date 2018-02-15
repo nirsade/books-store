@@ -1,7 +1,7 @@
 import * as React from 'react';
 import axios from 'axios';
 import * as _ from 'lodash';
-import { observable, action } from "mobx";
+import { observable } from "mobx";
 import { observer } from "mobx-react";
 import { Table } from 'semantic-ui-react';
 import { BooksTableRow } from './BooksTableRow';
