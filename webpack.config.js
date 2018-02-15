@@ -8,9 +8,6 @@ module.exports = {
         root: __dirname,
         alias: {
             Main: 'app/components/Main.jsx',
-            SearchForm: 'app/components/SearchForm.jsx',
-            PhotoContainer: 'app/components/PhotoContainer.jsx',
-            FlickrApi: 'app/api/FlickrApi.jsx'
         },
         extensions: ['', '.js', '.jsx']
     },
