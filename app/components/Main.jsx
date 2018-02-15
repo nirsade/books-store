@@ -1,21 +1,15 @@
 var React = require('react');
 import { BooksTable } from './BooksTable'
 
-var Main = (props) => {
+export const Main = (props) => {
   return (
     <div>
-      <div>
-        <div>
-          <div className='mainHeader'>
-            <h1>
-              Books Store
-            </h1>
-          </div>
-          <BooksTable/>
-        </div>
+      <div className='mainHeader'>
+        <h1>
+          Books Store
+        </h1>
       </div>
+      <BooksTable/>
     </div>
   );
 }
-
-module.exports = Main;

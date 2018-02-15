@@ -60,8 +60,6 @@
 
 	var _Main = __webpack_require__(937);
 
-	var _Main2 = _interopRequireDefault(_Main);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
@@ -69,7 +67,7 @@
 	_reactDom2.default.render(React.createElement(
 	  _reactRouter.Router,
 	  { history: _reactRouter.hashHistory },
-	  React.createElement(_reactRouter.Route, { path: '/', component: _Main2.default }),
+	  React.createElement(_reactRouter.Route, { path: '/', component: _Main.Main }),
 	  React.createElement(_reactRouter.Route, { path: '/book', component: _BookDetails.BookDetails })
 	), document.getElementById('app'));
 
@@ -70131,37 +70129,30 @@
 
 	'use strict';
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.Main = undefined;
+
 	var _BooksTable = __webpack_require__(938);
 
 	var React = __webpack_require__(1);
-
-
-	var Main = function Main(props) {
+	var Main = exports.Main = function Main(props) {
 	  return React.createElement(
 	    'div',
 	    null,
 	    React.createElement(
 	      'div',
-	      null,
+	      { className: 'mainHeader' },
 	      React.createElement(
-	        'div',
+	        'h1',
 	        null,
-	        React.createElement(
-	          'div',
-	          { className: 'mainHeader' },
-	          React.createElement(
-	            'h1',
-	            null,
-	            'Books Store'
-	          )
-	        ),
-	        React.createElement(_BooksTable.BooksTable, null)
+	        'Books Store'
 	      )
-	    )
+	    ),
+	    React.createElement(_BooksTable.BooksTable, null)
 	  );
 	};
-
-	module.exports = Main;
 
 /***/ }),
 /* 938 */
@@ -113912,9 +113903,7 @@
 	        });
 	    },
 	    deleteBook: function deleteBook(bookId) {
-	        return axios.delete('https://vast-hollows-50722.herokuapp.com/books/' + bookId).then(function (res) {
-	            console.log(res);
-	        }, function (res) {
+	        return axios.delete('https://vast-hollows-50722.herokuapp.com/books/' + bookId).then(function (res) {}, function (res) {
 	            throw new Error(res.date.message);
 	        });
 	    }

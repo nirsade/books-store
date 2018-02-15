@@ -30,7 +30,7 @@ module.exports = {
     deleteBook: (bookId) => {
         return axios.delete('https://vast-hollows-50722.herokuapp.com/books/' + bookId)
             .then(res => {
-                console.log(res);
+
             }, res => {
                 throw new Error(res.date.message);
             })
