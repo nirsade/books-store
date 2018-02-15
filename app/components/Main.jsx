@@ -11,7 +11,7 @@ var Main = (props) => {
               Books Store
             </h1>
           </div>
-          <BooksTable booksStore={props.route.bookStore}/>
+          <BooksTable/>
         </div>
       </div>
     </div>

@@ -89663,7 +89663,7 @@
 	            'Books Store'
 	          )
 	        ),
-	        React.createElement(_BooksTable.BooksTable, { booksStore: props.route.bookStore })
+	        React.createElement(_BooksTable.BooksTable, null)
 	      )
 	    )
 	  );
