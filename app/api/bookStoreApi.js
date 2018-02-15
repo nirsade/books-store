@@ -2,7 +2,7 @@ var axios = require('axios');
 
 module.exports = {
     getBooks: function () {
-        return axios.get('http://vast-hollows-50722.herokuapp.com/books').then(res => {
+        return axios.get('https://vast-hollows-50722.herokuapp.com/books').then(res => {
             if (res.data.message) {
                 throw new Error(res.date.message);
             } else {
@@ -13,7 +13,7 @@ module.exports = {
         });
     },
     addBook: (book) => {
-        return axios.post('http://vast-hollows-50722.herokuapp.com/books', {
+        return axios.post('https://vast-hollows-50722.herokuapp.com/books', {
             "genre": book.genre,
             "title": book.title,
             "publication_date": book.date,
@@ -28,7 +28,7 @@ module.exports = {
         })
     },
     deleteBook: (bookId) => {
-        return axios.delete('http://vast-hollows-50722.herokuapp.com/books/' + bookId)
+        return axios.delete('https://vast-hollows-50722.herokuapp.com/books/' + bookId)
             .then(res => {
                 console.log(res);
             }, res => {

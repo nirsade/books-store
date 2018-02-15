@@ -113886,7 +113886,7 @@
 
 	module.exports = {
 	    getBooks: function getBooks() {
-	        return axios.get('http://vast-hollows-50722.herokuapp.com/books').then(function (res) {
+	        return axios.get('https://vast-hollows-50722.herokuapp.com/books').then(function (res) {
 	            if (res.data.message) {
 	                throw new Error(res.date.message);
 	            } else {
@@ -113897,7 +113897,7 @@
 	        });
 	    },
 	    addBook: function addBook(book) {
-	        return axios.post('http://vast-hollows-50722.herokuapp.com/books', {
+	        return axios.post('https://vast-hollows-50722.herokuapp.com/books', {
 	            "genre": book.genre,
 	            "title": book.title,
 	            "publication_date": book.date,
@@ -113912,7 +113912,7 @@
 	        });
 	    },
 	    deleteBook: function deleteBook(bookId) {
-	        return axios.delete('http://vast-hollows-50722.herokuapp.com/books/' + bookId).then(function (res) {
+	        return axios.delete('https://vast-hollows-50722.herokuapp.com/books/' + bookId).then(function (res) {
 	            console.log(res);
 	        }, function (res) {
 	            throw new Error(res.date.message);
