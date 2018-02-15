@@ -46,3 +46,7 @@
 .bookCardHeader {
     color: blueviolet;
 }
+
+.menu {
+    height: 100px !important;
+}

@@ -110,9 +110,9 @@ export class AddBookModal extends React.Component {
               <br/>
               <Input label='price' type='number' onChange={(e, data) => this.handleInputChange(e, data, 'price')}/>
               <br/>
-              <Dropdown label='Genre' selection fluid options={genreItems} 
-              onChange={(e, data) => this.handleInputChange(e, data, 'genre')}
-              placeholder='Choose Genre'/>
+              <Dropdown scrolling label='Genre' selection fluid options={genreItems} 
+                onChange={(e, data) => this.handleInputChange(e, data, 'genre')}
+                placeholder='Choose Genre'/>
               <br/>
               <div style={{textAlign: 'center'}}>
                 <Button color='green' onClick={() => this.handleAddClick()}>ADD</Button>

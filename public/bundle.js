@@ -113835,7 +113835,7 @@
 	                  return _this2.handleInputChange(e, data, 'price');
 	                } }),
 	              React.createElement('br', null),
-	              React.createElement(_semanticUiReact.Dropdown, { label: 'Genre', selection: true, fluid: true, options: genreItems,
+	              React.createElement(_semanticUiReact.Dropdown, { scrolling: true, label: 'Genre', selection: true, fluid: true, options: genreItems,
 	                onChange: function onChange(e, data) {
 	                  return _this2.handleInputChange(e, data, 'genre');
 	                },
