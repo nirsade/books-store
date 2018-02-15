@@ -1,25 +1,48 @@
-.photoContainer img.photo {
-    width: 350px;
-    height: 350px;
-    padding: 5px;
-    border: 3px solid dimgray;
-    background-color: greenyellow;
-    margin: 5px;
-}
-.photoContainer img.photo:hover {
-    background-color: aqua;
-}
-.photoContainer {
+.mainHeader {
+    margin-top: 20px;
+    margin-bottom: 50px;
     text-align: center;
-    padding-top: 30px;
-}    
-form.serchForm {
-    text-align: center;
-}    
-.title {
-    text-align: center;
-    font-size: 30px;
-    font-family: fantasy;
+    color: blueviolet;
 }
 
+.booksTable {
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
+.addBookModalContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.iconContainer:hover {
+    cursor: pointer;
+    text-align: center;
+}
+
+.bookNameHeader {
+    margin-left: 20px;
+}
+
+.bookNameHeader:hover {
+    cursor: pointer;
+}
+
+.cardButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bookDetailContainer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.bookCard {
+    margin-top: 50px;
+}
+
+.bookCardHeader {
+    color: blueviolet;
+}

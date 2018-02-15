@@ -1,10 +1,13 @@
-// This file is the main app file that render the Main component
+import * as React from 'react';
+import ReactDOM from 'react-dom';
+import { Route , Router , hashHistory } from 'react-router';
+import { BookDetails } from './components/BookDetails';
+import Main from 'Main';
 
-var React = require('react');
-var ReactDOM = require('react-dom');
-var Main = require('Main');
-
-ReactDOM.render(     
-        <Main/>,
-    document.getElementById('app')
+ReactDOM.render(
+  <Router history={hashHistory}>
+    <Route path="/" component={Main}/>
+    <Route path="/book" component={BookDetails}/>
+  </Router>,
+  document.getElementById('app')
 );
